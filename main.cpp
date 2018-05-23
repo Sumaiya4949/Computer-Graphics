@@ -15,7 +15,7 @@ void drawShapes(void)
 	glClear(GL_COLOR_BUFFER_BIT);	// Clear display window
 
 	//Set colour to black
-	glColor3f(0.0, 0.0, 0.0);
+	glColor3f(1.0, 1.0, 1.0);
 	//Adjust the point size
 	glPointSize(10.0);
 
@@ -24,171 +24,20 @@ void drawShapes(void)
 	//Set colour to red
 	glColor3f(1.0, 0.0, 0.0);
 
-	// Draw a line
 	glBegin(GL_POLYGON);
+	    glVertex2i(50, 350);
+		glVertex2i(400, 350);
 		glVertex2i(100, 350);
 		glVertex2i(300, 350);
-
+        glVertex2i(50, 350);
+        glVertex2i(300, 350);
+		glVertex2i(400, 350);
 		glVertex2i(100, 350);
-		glVertex2i(300, 350);
 
-		glVertex2i(300, 350);
-		glVertex2i(300, 200);
-
-
-		glVertex2i(100, 200);
-		glVertex2i(300, 200);
 
 
 	glEnd();
-
-		glColor3f(0.0, 1.0, 0.0);
-
-	// Draw a line
-	glBegin(GL_POLYGON);
-		glVertex2i(100, 200);
-		glVertex2i(300, 200);
-
-		glVertex2i(100, 200);
-		glVertex2i(100, 50);
-
-		glVertex2i(100, 50);
-		glVertex2i(300, 50);
-
-
-		glVertex2i(300, 50);
-		glVertex2i(300, 200);
-
-
-	glEnd();
-
-	glColor3f(0.0, 0.0, 1.0);
-	glBegin(GL_POLYGON);
-
-	glVertex2i(100, 350);
-    glVertex2i(300, 350);
-
-	glVertex2i(100, 350);
-	glVertex2i(140, 380);
-
-	glVertex2i(300, 350);
-	glVertex2i(330, 380);
-
-	glVertex2i(140, 380);
-	glVertex2i(330, 380);
-
-
-	glEnd();
-
-	glColor3f(0.0, 1.0, 1.0);
-	glBegin(GL_QUADS);
-
-	glVertex2i(300, 350);
-	glVertex2i(330, 380);
-	glVertex2i(330, 50);
-	glVertex2i(300, 50);
-
-	glEnd();
-	glColor3f(1.0, 0.0, 0.0);
-	glBegin(GL_POLYGON);
-
-    glVertex2i(100, 50);
-	glVertex2i(80 , 30);
-
-	glVertex2i(330, 50);
-	glVertex2i(350, 30);
-
-	glVertex2i(100, 50);
-	glVertex2i(330, 50);
-
-	glVertex2i(80 , 30);
-	glVertex2i(350, 30);
-
-	glEnd();
-
-	glColor3f(0.0, 1.0, 1.0);
-	glBegin(GL_QUADS);
-
-	glVertex2i(180, 350);
-	glVertex2i(220, 350);
-
-	glVertex2i(220, 350);
-	glVertex2i(180, 50);
-
-	glVertex2i(220, 50);
-	glVertex2i(220, 350);
-
-	glVertex2i(180, 50);
-	glVertex2i(220, 50);
-
-	glEnd();
-	glColor3f(0.0, 1.0, 1.0);
-	glBegin(GL_POLYGON);
-
-	glVertex2i(250, 320);
-	glVertex2i(280, 320);
-
-	glVertex2i(280, 320);
-	glVertex2i(250, 270);
-
-	glVertex2i(250, 270);
-	glVertex2i(280, 270);
-
-	glVertex2i(280, 320);
-	glVertex2i(280, 270);
-
-	glEnd();
-
-	glColor3f(0.0, 0.0, 1.0);
-	glBegin(GL_POLYGON);
-
-	glVertex2i(280, 100);
-	glVertex2i(280, 150);
-
-	glVertex2i(250, 150);
-	glVertex2i(250, 100);
-
-	glVertex2i(250, 100);
-	glVertex2i(280, 150);
-
-	glVertex2i(280, 100);
-    glVertex2i(250, 150);
-glEnd();
-
-glColor3f(0.0, 0.0, 1.0);
-	glBegin(GL_POLYGON);
-
-	glVertex2i(120, 150);
-	glVertex2i(150, 150);
-
-	glVertex2i(120, 100);
-	glVertex2i(150, 100);
-
-	glVertex2i(150, 150);
-	glVertex2i(120, 100);
-
-	glVertex2i(120, 150);
-    glVertex2i(150, 100);
-
-glEnd();
-
-glColor3f(0.0, 1.0, 1.0);
-	glBegin(GL_POLYGON);
-
-	glVertex2i(150, 320);
-	glVertex2i(150, 270);
-
-	glVertex2i(150, 270);
-	glVertex2i(120, 270);
-
-	glVertex2i(120, 270);
-	glVertex2i(120, 320);
-
-	glVertex2i(150, 320);
-	glVertex2i(120, 320);
-	glEnd();
-
-	glFlush();	// Process all OpenGL routines
+	glFlush();
 }
 int main(int argc, char* argv[])
 {
